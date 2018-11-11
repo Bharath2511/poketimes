@@ -5,6 +5,8 @@ const Rainbow = WrappedComponent => {
   const randomColour = colours[Math.floor(Math.random() * 2)];
   const className = randomColour + "-text";
 
+  //here this props is passed into this wrapped component
+  //we are passing props to the about component
   return props => {
     return (
       <div className={className}>
